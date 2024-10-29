@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+}
+
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/SCDream1.woff) format("woff");
+}
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/SCDream2.woff) format("woff");
+}
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/SCDream3.woff) format("woff");
+}
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/SCDream4.woff) format("woff");
+}
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/SCDream5.woff) format("woff");
+}
+@font-face {
+    font-family: 'S-Dream'; 
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/SCDream6.woff) format("woff");
+}
+@font-face {
+    font-family: 'Greyst'; 
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Greyst-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Tenada'; 
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Tenada.ttf) format("truetype");
+}
+html {font-size: 10px;}
+body {font-family: 'S-Dream'; background: #EEE9DB; color: #3f3b37;}
+
+
+.cursor {position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; background-color: rgb(0, 0, 0);  z-index: -1;}
+.cursor.type1 {width: 50px; height: 50px; background-color: rgb(255, 0, 127); transition: transform 0.1s ease 0s, opacity 0.1s ease 0s;}
+.cursor.type2 {width: 150px; height: 150px; opacity: 0.3; transition: transform 0.18s ease 0s, opacity 0.2s ease 0s;}
+.cursor.type3 {width: 200px; height: 200px; opacity: 0.1; transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;}
+
+.wrap {position: relative;}
+.inner {max-width: 1500px; margin: 80px auto; padding: 0 30px; overflow: hidden; box-sizing: border-box;}
+
+header {position: fixed; left: 30px; top: 30px; font-family: 'Greyst';}
+header h1 {display: flex; justify-content: center; align-items: center; width: 58px; height: 58px; color: #EEE9DB; background: #3f3b37; font-size: 3rem; box-sizing: border-box;}
+
+.sc_visual {font-family: 'Greyst';}
+.max-container {width: 100%; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.main-tit {padding-top: 100px; text-align: center;}
+.main-tit span {display: inline-block; position: relative; font-size: 10vw; font-weight: bold;}
+.main-tit > div + div {margin: 25px 0;}
+.sub-tit {padding-top: 20px;}
+.sub-tit span {display: inline-block; font-size: 3vw; font-weight: bold;}
+
+.up-txt { display: block; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: translateY(100%) rotate(10deg); transform: translateY(100%) rotate(10deg); opacity: 0; }
+.intro_txt h2 {margin-bottom: 25px; font-size: 3vw;}
+.intro_txt p {font-size: 2vw; line-height: 1.8;}
+.profile_wrap {position: relative; max-width: 560px; margin: 80px auto 50px;}
+.profile_img {position: relative; overflow: hidden;}
+.profile_img > img {width: 100%;}
+.profile_txt {width: 100vw;}
+.profile_txt span {display: block;  position: absolute; left:50%; top: 50%; transform: translate(-50%, -50%); font-size: 25rem; font-weight: bold; text-transform: uppercase;}
+.profile_txt .top {z-index: 3; color: #eee9db;}
+.profile_txt .bottom {z-index: 1;}
+.profile_intro {max-width: 950px; margin: 0 auto;}
+.profile_intro > p {font-size: 2.3rem; line-height: 1.8;}
+
+.row_box {display: flex; align-items: center; border-bottom: 1px solid #3f3b37;}
+.skill_area {width: 50%;}
+.skill_area h4 {padding: 0 3vw; font-size: 2vw; font-weight: 400;}
+.skill_list {display: flex; flex-wrap: wrap;}
+.skill_list li {display: flex; width: calc(100% / 3); background: url(../images/label.svg) no-repeat; background-size: cover; justify-content: center; align-items: center; color: #fff4e9; font-size: 2vw; font-weight: 500;}
+
+.sc_label {position: relative; padding-top: 115vh; overflow: hidden;}
+.sc_label .rotater_wrap {position: absolute;}
+.sc_label .rotater_wrap.type1 {top: 85vh; transform: rotate(24deg); left: -11%; z-index: 1;}
+.sc_label .rotater_wrap.type2 {top: 45vh; right: 0;}
+.sc_label .rotater_wrap.type3 {top: 70vh; left: 0;}
+.sc_label .rotater_wrap.type4 {top: 87vh; transform: rotate(-24deg); left: -45%; z-index: 1;}
+.sc_label .label_txt {width: 160vw; max-height: 20vh; padding: 1vw 2vw 1.5vw; overflow: hidden;}
+.sc_label .label_txt.black {background: #3f3b37; border: 1px solid #eee9db;}
+.sc_label .label_txt.white {background: #eee9db; border: 1px solid #3f3b37;}
+.sc_label .label_txt span {display: inline-block; margin: 0 2vw; font-size: 19.2rem; font-weight: bold; text-transform: uppercase; font-family: 'Greyst';}
+.sc_label .label_txt.black span {color: #eee9db;}
+.sc_label .hidden-txt {width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0;}
+.sc_label .hidden-txt h2 {font-size: 12vw; text-align: center; text-transform: uppercase; font-family: 'Greyst';}
+
+.sc_project {position: relative; color: #1b1b1b;}
+.sc_project .project_wrapper {position: sticky; position: -webkit-sticky; top: 0; left: 0; display: flex; width: 100%; height: 100vh; align-items: center;}
+.sc_project .project_wrapper.bg1 {background-color: #EBECF5;}
+.sc_project .project_wrapper.bg2 {background-color: #00223E; color: #fff;}
+.sc_project .project_wrapper.bg3 {background-color: #ffeff0;}
+.sc_project .project_wrapper.bg4 {background-color: #f7f7f7;}
+.sc_project .project_wrapper.bg5 {background-color: #2A459D; color: #fff;}
+.sc_project .project_wrapper.bg6 {background-color: #e95b35; color: #fff;}
+.sc_project .project_wrapper.bg7 {background-color: #dce5de;}
+.sc_project .project_number {width: 40%; padding: 0 10vw; text-align: center;}
+.sc_project .project_number strong {display: block; font-size:5vw; font-family: 'Greyst';}
+.sc_project .project_number h2 {margin-top: 30px; font-size: 2vw; font-weight: 500;}
+.sc_project .project_number ul {display: flex; justify-content: center; margin-top: 30px;}
+.sc_project .project_number ul li {font-size: 0.9vw;}
+.sc_project .project_number ul li + li {margin-left: 15px;}
+.sc_project .project_image {display: flex; align-items: center; justify-content: center; width: 60%; height: 20vw;}
+.sc_project .project_image img {width: 25vw;}
+.sc_project .site_btn {margin-top: 30px;}
+.sc_project .site_btn > a {display: inline-block; padding: 10px 15px; font-size: 1vw; font-weight: bold; border: 2px solid #1b1b1b; border-radius: 20px; font-family: 'Greyst';}
+.sc_project .site_btn > a + a {margin-left: 10px;}
+.sc_project .project_wrapper.bg2 .site_btn > a, .sc_project .project_wrapper.bg5 .site_btn > a, .sc_project .project_wrapper.bg6 .site_btn > a {border: 2px solid #fff;}
+.sc_project .bg_shadow {opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.6); z-index: -1;}
+
+.content_wrap {padding: 7vw 3vw;}
+.sc_acc {width: 100%; height: 100vh; display: flex; align-items: center;}
+.sc_acc .line_txt {padding: 0 12vw;}
+.sc_acc .line_txt p {display: inline-block; -webkit-text-stroke-width: 2px; color: transparent; -webkit-text-stroke-color: #3f3b37; font-size: 2vw; font-weight: bold; line-height: 1.3; text-transform: uppercase;}
+.sc_acc .line_txt span {display: inline-block; -webkit-text-stroke-width: 2px; color: transparent; -webkit-text-stroke-color: #3f3b37; font-size: 2vw; font-weight: bold; line-height: 1.3; text-transform: uppercase; line-height: 1.5;}
+
+.sc_acc .acc_list {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 360px); column-gap: 20px;}
+.sc_acc .acc_list > li {position: relative;}
+.sc_acc .acc_list > li::before {position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: block; width: 90%; height: 2px; background: #3f3b37; content: '';}
+.sc_acc .acc_list > li::after {position: absolute; top: 50%; right: 0; transform: translateY(-50%); display: block; width: 2px; height: 90%; background: #3f3b37; content: '';}
+.sc_acc .acc_list > li > h3 {font-size: 2vw; padding: 2vw 0;}
+.sc_acc .acc_list .badge_area {display: flex; position: absolute; left: 5px; bottom: 20px;}
+.sc_acc .acc_list .badge_area span {display: flex; justify-content: center; align-items: center; padding: 7px 15px; border: 2px solid #3f3b37; border-radius: 20px; font-size: 1vw; font-weight: 500;}
+.sc_acc .acc_list .badge_area span + span {margin-left: 10px;}
+.sc_acc .acc_list .hidden_img {opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity 0.5s;}
+.sc_acc .acc_list > li:hover .hidden_img {opacity: 1;}
+.sc_acc .acc_list .hidden_img img {display: block; width: 100%; height: 100%; object-fit: cover;}
+
+.mo_block {display: none;}
+
+@media screen and (min-width: 1024px) {
+    .intro_txt h2 {font-size: 2vw;}
+    .intro_txt p {font-size: 1.2vw;}
+    .sc_acc .line_txt p {font-size: 5vw;}
+    .sc_acc .line_txt span {font-size: 5vw;}
+    .skill_list li {height: 5vw;}
+    .sc_label .hidden-txt h2 {font-size: 10vw;}
+}
+
+@media screen and (max-width: 479px) {
+    .intro_txt h2 {font-size: 6vw;}
+    .intro_txt p {font-size: 3vw;}
+    .profile_txt span {font-size: 30vw;}
+    .profile_intro > p {font-size: 3vw;}
+    .mo_block {display: block;}
+}
