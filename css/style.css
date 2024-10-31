@@ -144,13 +144,15 @@ header h1 {display: flex; justify-content: center; align-items: center; width: 5
 /* 프로젝트 상세 */
 .sc_project {position: relative; color: #1b1b1b;}
 .sc_project .project_wrapper {position: sticky; position: -webkit-sticky; top: 0; left: 0; display: flex; width: 100%; height: 100vh; align-items: center;}
-.sc_project .project_wrapper.bg1 {background-color: #EBECF5;}
-.sc_project .project_wrapper.bg2 {background-color: #00223E; color: #fff;}
-.sc_project .project_wrapper.bg3 {background-color: #ffeff0;}
-.sc_project .project_wrapper.bg4 {background-color: #f7f7f7;}
-.sc_project .project_wrapper.bg5 {background-color: #2A459D; color: #fff;}
-.sc_project .project_wrapper.bg6 {background-color: #e95b35; color: #fff;}
-.sc_project .project_wrapper.bg7 {background-color: #dce5de;}
+.sc_project .project_wrapper.gangdong {background-color: #ffe4e5;}
+.sc_project .project_wrapper.thanks {background-color: #dce5de;}
+.sc_project .project_wrapper.forum {background-color: #e9f0f7;}
+.sc_project .project_wrapper.gachi {background-color: #EBECF5;}
+.sc_project .project_wrapper.uni {background-color: #00223E; color: #fff;}
+.sc_project .project_wrapper.uni .site_btn a {border-color: #fff;}
+.sc_project .project_wrapper.jongno {background-color: #ffeff0;}
+.sc_project .project_wrapper.kosha {background-color: #f7f7f7;}
+
 .sc_project .project_number {width: 40%; padding: 0 10vw; text-align: center;}
 .sc_project .project_number strong {display: block; font-size:9rem; font-family: 'Greyst';}
 .sc_project .project_number h2 {margin-top: 30px; font-size: 4rem; font-weight: 500;}
@@ -166,9 +168,8 @@ header h1 {display: flex; justify-content: center; align-items: center; width: 5
 
 /* 끝인사 */
 .sc_acc {width: 100%; height: 100vh; display: flex; align-items: center;}
-.sc_acc .line_txt {padding: 0 12vw;}
-.sc_acc .line_txt p {display: inline-block; -webkit-text-stroke-width: 2px; color: transparent; -webkit-text-stroke-color: #3f3b37; font-size: 2vw; font-weight: bold; line-height: 1.3; text-transform: uppercase;}
-.sc_acc .line_txt span {display: inline-block; -webkit-text-stroke-width: 2px; color: transparent; -webkit-text-stroke-color: #3f3b37; font-size: 8rem; font-weight: bold; line-height: 1.3; text-transform: uppercase; line-height: 1.5;}
+.sc_acc .line_txt {padding: 0 8vw;}
+.sc_acc .line_txt span {display: inline-block; -webkit-text-stroke-width: 2px; color: transparent; -webkit-text-stroke-color: #3f3b37; font-size: 10rem; font-weight: bold; line-height: 1.3; text-transform: uppercase; line-height: 1.5;}
 .sc_acc .acc_list {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 360px); column-gap: 20px;}
 .sc_acc .acc_list > li {position: relative;}
 .sc_acc .acc_list > li::before {position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: block; width: 90%; height: 2px; background: #3f3b37; content: '';}
@@ -184,6 +185,8 @@ header h1 {display: flex; justify-content: center; align-items: center; width: 5
 @media screen and (max-width: 1024px) {
     header {left: 15px; top: 15px;}
     header h1 {width: 45px; height: 45px; font-size: 2rem;}
+
+    .cursor {display: none;}
 
     /* 인트로 */
     .main-tit span {font-size: 7rem;}
@@ -255,5 +258,5 @@ header h1 {display: flex; justify-content: center; align-items: center; width: 5
     .sc_project .project_number ul {margin-top: 25px;}
 
     /* 끝인사 */
-    .sc_acc .line_txt span {font-size: 2.2rem; line-height: 1.8;}
+    .sc_acc .line_txt span {font-size: 2.5rem; line-height: 1.8;}
 }
