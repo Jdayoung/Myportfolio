@@ -139,7 +139,7 @@ header h1 {display: flex; justify-content: center; align-items: center; width: 5
 .sc_label .label_txt span {display: inline-block; margin: 0 2vw; font-size: 19.2rem; font-weight: bold; text-transform: uppercase; font-family: 'Greyst';}
 .sc_label .label_txt.black span {color: #eee9db;}
 .sc_label .hidden-txt {width: 100%; position: absolute; left: 50%; top: calc(50% - 70px); transform: translate(-50%, -50%); opacity: 0;}
-.sc_label .hidden-txt h2 {font-size: 15rem; text-align: center; text-transform: uppercase; font-family: 'Greyst';}
+.sc_label .hidden-txt h2 {padding: 0 15px; font-size: 15rem; text-align: center; text-transform: uppercase; font-family: 'Greyst';}
 
 /* 프로젝트 상세 */
 .sc_project {position: relative; color: #1b1b1b;}
